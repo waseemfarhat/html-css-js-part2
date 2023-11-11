@@ -1,0 +1,186 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <link href="similarweb.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    </head>
+    <body>
+        <div class="paragraph">
+    <p>Live expert panel for marketing leaders: revamp your competitor research.</p>
+    <div class="signup">
+    <a href="#">Sign up!</a>
+    </div>
+    </div>
+    
+    <div class="container">
+        <img src="similarweb___fdf-removebg-preview.png"   width="200px"   height="40px">
+    <div class="logoandmenu">
+    <ul>
+    <li><a href="#">Free Tools</a></li>
+    <div class="megamenu">
+        <div>
+       <ul id="info">
+        <li>
+            <h id="ranking">Ranking the Digital <br>World</h>
+    <p>Understand how your traffic and <br>key engagement metrics stack up against<br> the market at a glance.</p>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul id="menu1">
+    <li>Rankings</li>
+    <li><a href="#">Top Websites</a></li>
+    <li><a href="#">Trending Websites</a></li>
+    <li><a href="#">Top Android Apps</a></li>
+    <li><a href="#">Top iOS Apps</a></li>
+    <li><a href="#">Top Browser Apps</a></li>
+
+    </ul>
+</div>
+
+   
+ 
+<div>
+    <ul id="menu2">
+    <li><a href="#">Top Search Engines</a></li>
+    <li><a href="#">Mobile vs. Desktop</a></li>
+    <li><a href="#">Digital 100</a></li>
+    </ul>
+</div>
+
+
+<div>
+ <ul id="menu3">
+ <li>Tools</li>
+ <li><a href="#">Analyze a website</a></li>
+ <li><a href="#">Verify Your Website</a></li>
+ <li><a href="#">Browser Extension</a></li>
+
+ </ul>
+</div>
+
+
+
+ 
+       
+    
+</div>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Our Customers</a></li>
+    <li><a href="#">Our Data</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Resources</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    
+    
+    </body>
+    
+    </html>
+
+
+
+body{
+    background-color: rgba(21,92,255,255);
+    overflow-x: hidden;}
+
+
+.paragraph {
+    background-color:#7975F2;
+  display: flex;
+  flex-direction: column;
+text-align: center;
+margin-top:0px;
+
+}
+.paragraph a{
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto","Noto Sans JP",sans-serif;
+    
+top: 0;
+left: 320px;
+top: 25.5px;
+}
+.paragraph p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Roboto","Noto Sans JP",sans-serif;
+}
+.container{
+    display: flex;
+   position: relative;
+    background-color: white;
+    margin: auto;
+}
+.container li{
+    list-style: none;
+    display:inline-block;
+
+
+}
+.container ul li a{
+
+    text-align: left;
+    text-decoration: none;
+    color: #092540;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto","Noto Sans JP",sans-serif;
+}
+.megamenu{
+
+    position: absolute;
+    margin-left: auto;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 2px 3px 3px lightblue;
+    padding:12px 0px 320px;
+background-color: white;
+left: 0;
+visibility: hidden;
+transition: 0.3s;
+display: flex;
+    
+}
+ul:hover .megamenu{
+visibility: visible;
+
+}
+#ranking{
+    font-size: x-large;
+    color: black;
+    font-weight: 500;
+}
+#info{
+    font-family: "Roboto","Noto Sans JP",sans-serif;
+    font-size: 13px;
+    
+
+}
+#menu1 li{
+    display: flex;
+    flex-direction: column;
+   
+}
+#menu2 li{
+    display: flex;
+    flex-direction: column;
+   
+}
+#menu3 li{
+    display: flex;
+    flex-direction: column;
+   
+}

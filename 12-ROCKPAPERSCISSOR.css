@@ -1,0 +1,77 @@
+body{
+
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+}
+.title{
+
+    font-size: 30px;
+    font-weight: bold;
+}
+.rockimage{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+}
+.paperimage{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+}
+.scissorimage{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 40px;
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+
+}
+.Js-result{
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+
+}
+.allresu{
+
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+color: white;
+}
+.restscorebutton{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.auto-play-button{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.js-reset-confirm-yes{
+padding: 10px;
+margin-left: 18px;
+cursor: pointer;
+margin-right: 10px;
+}
+.js-reset-confirm-no{
+padding: 10px;
+cursor: pointer;
+}
+.parayesno{
+width: 38%;
+    background-color: rgba(77, 77, 77, 0.068);
+    padding: 12px;
+}

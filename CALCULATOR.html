@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+    body{
+    background-color: rgb(0, 0, 0);
+}
+    
+    .showonscreen{
+margin: none;
+padding: none;
+color: white;
+font-size: 38px;
+    }
+button{
+color: #FFFFFF;
+font-size: 26px;
+font-family: Arial;
+background-color: #333333;
+padding: 20px 30px 20px 30px;
+margin:5px;
+
+border-radius: 50%;
+border: none;
+}
+.Clear-button{
+    font-size: 17px;
+    font-family: Arial;
+    padding: 22px 13px 22px 13px;
+
+}
+.dot{
+    font-size: 26px;
+    font-family: Arial;
+    padding: 20px 32px 20px 32px;
+
+}
+isequal{
+    font-size: 26px;
+    font-family: Arial;
+    padding: 22px 13px 22px 13px;
+
+}
+.negative{
+    font-size: 26px;
+    font-family: Arial;
+    padding: 20px 32px 20px 32px;
+    
+    background-color: #FEA00A;
+}
+.divide{ font-size: 26px;
+    font-family: Arial;
+    padding: 20px 33px 20px 33px;
+
+    background-color: #FEA00A;
+}
+.multiply{
+    font-size: 26px;
+    font-family: Arial;
+    padding: 20px 31px 20px 31px;
+
+    background-color: #FEA00A;
+}
+.plus{
+
+    background-color: #FEA00A;
+}
+
+
+</style>
+</head>
+
+<body>
+    <p class="showonscreen"></p>
+
+<button onclick="
+    updatecalculation(1);
+    "
+
+>1</button>
+
+
+<button onclick="
+
+updatecalculation(2);
+"
+>2</button>
+
+<button onclick="
+
+updatecalculation(3);
+"
+
+>3</button>
+
+
+<button class="plus"
+onclick="
+
+updatecalculation(`+`);
+"
+>+</button>
+
+
+
+
+<br><button
+onclick="
+ updatecalculation(4);
+
+"
+
+>4</button>
+
+
+
+<button
+onclick="
+
+updatecalculation(5);
+
+"
+
+
+>5</button>
+
+
+
+<button
+onclick="
+
+updatecalculation(6);
+"
+
+>6</button>
+
+
+
+
+<button class="negative"
+onclick="
+
+updatecalculation(`-`);
+
+"
+>-</button>
+
+
+
+<br><button onclick="
+
+updatecalculation(7);
+"
+>7</button>
+
+
+
+
+<button onclick="
+
+updatecalculation(8);
+
+
+"
+>8</button>
+
+
+
+<button
+onclick="
+
+updatecalculation(9);
+">9</button>
+
+
+
+
+<button class="multiply"
+onclick="
+
+updatecalculation(`*`);
+
+"
+
+>*</button>
+
+
+
+<br><button
+onclick="
+
+updatecalculation('0');
+
+"
+
+
+
+>0</button>
+
+
+
+<button class="dot"
+onclick="
+document.querySelector('.showonscreen').innerHTML=`${calculation}`
+
+updatecalculation(`.`);
+"
+>.</button>
+
+
+
+
+<button class="isequal"
+onclick="
+calculation=eval(calculation);
+document.querySelector('.showonscreen').innerHTML=`${calculation}`
+
+"
+
+>=</button>
+
+
+
+
+<button  class="divide"
+onclick="
+
+updatecalculation(`/`);
+"
+>/</button>
+
+
+<br><button class="Clear-button"
+onclick="
+calculation=0;
+
+
+localStorage.removeItem(`calculate`);
+document.querySelector('.showonscreen').innerHTML=`${calculation}`
+
+"
+>clear</button>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+ 
+let calculation='';
+calculation = JSON.parse(localStorage.getItem('calculate'));
+function updatecalculation(value){
+calculation=calculation+value;
+console.log(calculation);
+
+localStorage.setItem(`calculate` ,JSON.stringify(calculation));
+
+let show=document.querySelector('.showonscreen').innerHTML=`${calculation}`
+show.classlist.add('boyakasha');
+}
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
